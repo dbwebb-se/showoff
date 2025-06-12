@@ -1,0 +1,82 @@
+// style/map.scss
+@use 'variables' as *;
+
+
+.map-all {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.map-use {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 75vh;
+}
+
+.use-info {
+  height: 30vh;
+  margin-left: -1 * $main-padding;
+  width: 100%;
+  background-color: $white;
+  border-radius: 1rem 1rem 0 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 100000;
+  font-family: $font-body;
+  padding: $main-padding;
+  padding-top: $magic-number;
+  
+}
+
+.back {
+  width: 2*  $magic-number;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 238);
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  text-align: center;
+  z-index: 1000000;
+}
+
+.back img {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.time-text {
+  color: $grey;
+  margin-top: 0.5rem;
+}
+
+.est-time {
+  border-radius: 10px / 50%;
+  background-color: rgb(255, 223, 51);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.05rem;
+  padding-bottom: 0.1rem;
+  font-size: $body-font-size;
+  display: inline-flex;
+}
+
+.ad-time-use {
+  text-decoration: line-through;
+  padding-right: 0.5rem;
+  font-size: $body-font-size;
+  display: inline-flex;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: row;
+}

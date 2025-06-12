@@ -1,0 +1,48 @@
+// style/button.scss
+@use 'variables' as *;
+
+
+.button {
+  text-decoration: none;
+  font-family: $font-body;
+  font-size: $body-font-size;
+  border-radius: 0.5rem;
+  line-height: $line-height;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.login-button {
+  background-color: $green;
+  position: fixed;
+  bottom: 6.7rem;
+  color: $white;
+  left: $main-padding;
+  right: $main-padding;
+  font-weight: 500;
+  border: hidden;
+}
+
+.register-button {
+  color: $black;
+  background-color: $light-green;
+  position: fixed;
+  bottom: 3.8rem;
+  left: $main-padding;
+  right: $main-padding;
+  border: hidden;
+}
+
+.submit-button {
+  background-color: $green;
+  position: fixed;
+  bottom: 3.8rem;
+  color: $white;
+  left: $main-padding;
+  right: $main-padding;
+  border: hidden;
+  font-weight: 500;
+}
+
+
+

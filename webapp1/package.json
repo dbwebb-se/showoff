@@ -1,0 +1,43 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "Course material for the course Webbapplikationer för mobila enheter given at Blekinge Institute of Technology.",
+  "main": "index.js",
+  "scripts": {
+    "style-min": "sass base.scss style.min.css  --no-source-map --style compressed",
+    "watch-min": "sass base.scss style.min.css --no-source-map --watch --style compressed",
+    "test": "echo \"Implement later\" && exit 0",
+    "start": "http-server .",
+    "posttest": "npm run eslint && npm run stylelint && npm run htmlhint",
+    "eslint": "eslint",
+    "eslint:fix": "eslint --fix",
+    "stylelint": "stylelint \"**/*.{css,scss}\"",
+    "stylelint:fix": "stylelint --fix \"**/*.{css,scss}\"",
+    "htmlhint": "htmlhint \"**/*.html\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "htmlhint": "^1.1.4",
+    "http-server": "^14.1.1",
+    "postcss": "^8.5.3",
+    "sass": "^1.89.0",
+    "stylelint": "^16.18.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard": "^37.0.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.14.0",
+    "@flaticon/flaticon-uicons": "^3.3.1",
+    "@mui/material": "^5.17.1",
+    "@sj-ab/component-library.styles.themes": "^9.5.3",
+    "@sj-ab/component-library.ui.theme-provider": "^3.1.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

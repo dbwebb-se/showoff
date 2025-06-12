@@ -1,0 +1,48 @@
+// style/login-register.scss
+@use 'variables' as *;
+
+.login-image {
+  display: block;
+  width: 6rem;
+  border: 2px solid $light-grey;
+  border-radius: 50%;
+  padding: 0.5 * $magic-number;
+  margin: 0 auto;
+  margin-top: 8rem;
+  margin-bottom: $magic-number;
+}
+
+.p-logreg {
+  text-align: center;
+  color: $dark-grey;
+}
+
+.input {
+  font-family: $font-body;
+  font-size: 0.8 * $body-font-size;
+  border-radius: 0.4rem;
+  border: 1px solid $black;
+  line-height: $line-height;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: $white;
+  width: 100%;
+  margin-bottom: $magic-number;
+  text-align: left;
+}
+
+.input:focus {
+  outline: none;
+}
+
+input:-webkit-autofill {
+  box-shadow: inset 0 0 0 9999px $white;
+}
+
+login-form h2 {
+  margin-top: 2 * $magic-number;
+}
+
+register-form h2 {
+  margin-top: 2 * $magic-number;
+}

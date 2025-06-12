@@ -1,0 +1,61 @@
+// style/favorite-delays.scss
+@use 'variables' as *;
+
+.fav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.fav-item {
+  margin-right: 0.5rem;
+  font-family: $font-body;
+}
+
+.est-time {
+  border-radius: 10px / 50%;
+  background-color: rgb(255, 223, 51);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.05rem;
+  padding-bottom: 0.1rem;
+  font-size: $body-font-size;
+}
+
+.ad-time {
+  text-decoration: line-through;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: $body-font-size;
+}
+
+.to-station {
+  font-weight: 500;
+}
+
+.train-no {
+  font-size: 0.9 * $body-font-size;
+  font-weight: 300;
+}
+
+.station-delays p {
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+  color: $dark-grey;
+}
+
+.station-favorite {
+  margin-top: $magic-number;
+  margin-left: 0.5rem;
+}
+
+.favorite-delays h2 {
+  margin-top: 2 * $magic-number;
+}
+
+.no-favorite {
+  margin-top: 2 * $magic-number;
+  text-align: center;
+}

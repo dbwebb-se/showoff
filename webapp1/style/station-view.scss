@@ -1,0 +1,36 @@
+// style/station-list.scss
+@use 'variables' as *;
+
+.single-station {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-station p { margin: 0; }
+
+.station-line {
+  height: 1px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: $light-grey;
+}
+
+.star {
+  font-size: $body-font-size * 1.5;
+}
+
+.discrete {
+  color: $grey;
+  margin-top: $magic-number * 0.5;
+}
+
+.station-view {
+  padding-top: $magic-number * 1.5;
+}
+
+.station-line:last-child {
+  display: none;
+}
+
+

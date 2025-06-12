@@ -1,0 +1,42 @@
+// style/navigation.scss
+
+@use 'variables' as *;
+@use 'sass:color';
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 0.2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  font-family: $font-header;
+  border-top: 1px solid $light-grey;
+  background-color: #fff;
+  z-index: 10000;
+
+  a {
+    color: $dark-grey;
+    text-decoration: none;
+  }
+
+  .active {
+    color: $black;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    font-size: $body-font-size * 0.6;
+  }
+
+  .small-icon {
+    height: 1rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.5rem;
+  }
+}
+
